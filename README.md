@@ -60,4 +60,4 @@ Bây giờ để tìm được plaintext ta chỉ cần làm ngược lại, ý 
 Việc mã hóa sẽ là: plaintext -> dynamic_xor_encrypt -> encrypt -> ciphertext, nên việc giải mã sẽ là: ciphertext -> decrypt -> decrypt_xor -> plaintext với decrypt là làm ngược lại encrypt, decrypt_xor là làm ngược lại dynamic_xor_encrypt.
 Việc tìm share_key cũng quan trọng trong việc tìm plaintext vì nó sẽ được dùng trong hàm decrypt (vì hàm encrypt cũng dùng khóa này để mã hóa), vì ta đã có p = 97, g = 31 (theo source code) và a = 95, b = 21 (theo flag_infor), khóa này được tạo theo thuật toán deffine_hellman, bạn có thể tìm hiểu thêm 
 
-Mình đã giải thích luồng xử lý để giải mã, tiếp theo phần source code giải mã mình sẽ để sang file khác để các bạn tiện theo dõi.
+Mình đã giải thích luồng xử lý để giải mã, tiếp theo phần source code giải mã mình sẽ up bằng file python nhé!
